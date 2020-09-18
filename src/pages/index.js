@@ -145,6 +145,13 @@ const RenderBody = ({ home, projects, meta }) => (
             </a>
         </Hero>
         <Section>
+            {RichText.render(home.about_title)}
+            <About
+                bio={home.about_bio}
+                socialLinks={home.about_links}
+            />
+        </Section>
+        <Section>
             {projects.map((project, i) => (
                 <ProjectCard
                     key={i}
@@ -159,13 +166,7 @@ const RenderBody = ({ home, projects, meta }) => (
                 See more work <span>&#8594;</span>
             </WorkAction>
         </Section>
-        <Section>
-            {RichText.render(home.about_title)}
-            <About
-                bio={home.about_bio}
-                socialLinks={home.about_links}
-            />
-        </Section>
+       
     </>
 );
 

@@ -9,3 +9,13 @@ html {
         font-family: 'Inter var', sans-serif;
     }
 }
+
+.header {
+    font-family: 'Inter var', sans-serif;
+    text-decoration: none !important;
+}
+
+.header a:-webkit-any-link{
+    text-decoration: none !important;
+}
+
