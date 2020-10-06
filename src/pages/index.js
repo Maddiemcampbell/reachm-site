@@ -133,7 +133,7 @@ const RenderBody = ({ home, projects, meta }) => (
                 },
             ].concat(meta)}
         />
-        <Hero>
+        <Hero className="background-hero">
             <>
                 {RichText.render(home.hero_title)}
             </>
